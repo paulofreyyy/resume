@@ -11,7 +11,6 @@ export function Contato() {
             display='flex'
             justifyContent="center"
             alignItems="center"
-            mt={10}
         >
             <Box width='50%' p={15}>
                 <Typography variant='h4' fontWeight={600}>
