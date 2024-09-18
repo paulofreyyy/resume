@@ -72,6 +72,19 @@ export function Appbar() {
                             mr: 10,
                         }}
                     >
+                        Certificados
+                    </Typography>
+                    <Typography
+                        variant="h6"
+                        noWrap
+                        component='a'
+                        href="#"
+                        color="#FFF"
+                        sx={{
+                            textDecoration: "none",
+                            mr: 10,
+                        }}
+                    >
                         Contato
                     </Typography>
                 </Toolbar>

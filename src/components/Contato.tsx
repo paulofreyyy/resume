@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export function Contato() {
     return (
@@ -49,6 +50,17 @@ export function Contato() {
                         }}
                     >
                         <GitHubIcon fontSize='large' />
+                    </Typography>
+                    <Typography
+                        component='a'
+                        href='wa.me/5521992419980'
+                        target='_blank'
+                        sx={{
+                            textDecoration: "none",
+                            color: "#fff",
+                        }}
+                    >
+                        <WhatsAppIcon fontSize='large' />
                     </Typography>
                 </Box>
             </Box>
