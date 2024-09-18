@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 export function Sobre() {
     return (
@@ -51,6 +51,33 @@ export function Sobre() {
             >
                 Sou Paulo Henrique, desenvolvedor com experiência principalmente em React JS, Node JS, NestJS e Typescript. Gosto de dar vida a ideias e ajudar as pessoas a automatizar e impulsionar seus negócios através da tecnologia.
             </Typography>
+
+            <Box display='flex' gap={4}>
+                <Button
+                    variant="contained"
+                    sx={{
+                        background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
+                        color: '#180F26',
+                        fontWeight: 'bold',
+                        padding: '15px 20px',
+                        borderRadius: 10
+                    }}
+                >
+                    Fale comigo
+                </Button>
+                <Button
+                    variant="outlined"
+                    sx={{
+                        fontWeight: 'bold',
+                        padding: '15px 20px',
+                        borderRadius: 10,
+                        border: "2px solid white",
+                        color: 'white'
+                    }}
+                >
+                    Veja meus projetos
+                </Button>
+            </Box>
         </Box>
     )
 }
