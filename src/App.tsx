@@ -1,9 +1,12 @@
-function App() {
+import './App.css'
+import { Appbar } from "./components/Appbar"
 
-  return (
-    <>
-    </>
-  )
+function App() {
+    return (
+        <>
+            <Appbar />
+        </>
+    )
 }
 
 export default App
