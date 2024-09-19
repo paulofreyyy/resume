@@ -24,7 +24,19 @@ export function Contato() {
                     comprehensive skill set encompassing front-end and back-end technologies
                 </Typography>
 
-                <Typography variant='body1' display='flex' gap={2} fontWeight={600}>
+                <Typography
+                    variant='body1'
+                    component='a'
+                    href='mailto:paulohenriquep2000@gmail.com'
+                    target='_blank'
+                    display='flex'
+                    gap={2}
+                    fontWeight={600}
+                    sx={{
+                        textDecoration: "none",
+                        color: "#FFF",
+                    }}
+                >
                     <MailOutlineIcon /> paulohenriquep2000@gmail.com
                 </Typography>
 

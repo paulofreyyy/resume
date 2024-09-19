@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 export function Sobre() {
     return (
@@ -53,30 +53,38 @@ export function Sobre() {
             </Typography>
 
             <Box display='flex' gap={4}>
-                <Button
-                    variant="contained"
+                <Typography
+                    variant="h6"
+                    component='a'
+                    target="_blank"
+                    href='wa.me/5521992419980'
                     sx={{
                         background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
-                        color: '#180F26',
+                        color: '#FFF',
                         fontWeight: 'bold',
-                        padding: '15px 20px',
-                        borderRadius: 10
+                        padding: '15px 25px',
+                        borderRadius: 10,
+                        textDecoration: "none",
                     }}
                 >
                     Fale comigo
-                </Button>
-                <Button
-                    variant="outlined"
+                </Typography>
+                <Typography
+                    variant="h6"
+                    target="_blank"
+                    component='a'
+                    href='https://github.com/paulofreyyy'
                     sx={{
                         fontWeight: 'bold',
-                        padding: '15px 20px',
+                        padding: '15px 25px',
                         borderRadius: 10,
                         border: "2px solid white",
-                        color: 'white'
+                        color: 'white',
+                        textDecoration: 'none'
                     }}
                 >
                     Veja meus projetos
-                </Button>
+                </Typography>
             </Box>
         </Box>
     )
