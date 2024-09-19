@@ -17,7 +17,7 @@ export function Contato() {
                 width={{ xs: '100%', sm: '80%', md: '50%' }}
                 p={10}
             >
-                <Typography variant='h4' fontWeight={600}>
+                <Typography fontSize='2rem' fontWeight='bold'>
                     Contato
                 </Typography>
 
@@ -66,7 +66,7 @@ export function Contato() {
                     </Typography>
                     <Typography
                         component='a'
-                        href='wa.me/5521992419980'
+                        href='https://api.whatsapp.com/send/?phone=5521992419980'
                         target='_blank'
                         sx={{
                             textDecoration: "none",

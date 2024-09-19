@@ -3,18 +3,21 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export function Experiencias() {
     return (
-        <Box bgcolor='#0B0414' p={15} color='#FFF' mt={10}>
-            <Typography variant="h4" mb={4}>Experiências</Typography>
+        <Box bgcolor='#0B0414' p={{ md: 15, xs: 3 }} py={{ md: 0, xs: 10 }} color='#FFF'>
+            <Typography fontSize='2rem' mb={4} fontWeight='bold' align="center">Experiências</Typography>
 
             <Accordion defaultExpanded sx={{ bgcolor: 'transparent', color: '#FFF' }}>
                 <AccordionSummary
                     expandIcon={<KeyboardArrowDownIcon sx={{ color: "#FFF" }} />}
                 >
-                    <Typography variant="h6" display='flex' flexDirection='row' gap={1} alignItems='center'>
-                        <Avatar src="/conversuLogo.jpeg" sx={{ width: 48, height: 48 }} />
-                        Desenvolvedor Frontend -
-                        <Box
+                    <Avatar src="/conversuLogo.jpeg" sx={{ width: 48, height: 48 }} />
+                    <Box ml={2}>
+                        <Typography fontSize={{ md: '1.2rem', xs: '0.8rem' }} display='flex' flexDirection='row' gap={1} alignItems='center'>
+                            Desenvolvedor Frontend
+                        </Typography>
+                        <Typography
                             component='span'
+                            fontSize={{ md: '1.2rem', xs: '0.8rem' }}
                             sx={{
                                 background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
                                 backgroundClip: "text",
@@ -24,8 +27,8 @@ export function Experiencias() {
                             }}
                         >
                             Conversu
-                        </Box>
                     </Typography>
+                    </Box>
                 </AccordionSummary>
 
                 <AccordionDetails>
@@ -34,7 +37,7 @@ export function Experiencias() {
                         <Chip label='Setembro 2024' sx={{ bgcolor: '#C5C5C5' }} />
                     </Typography>
 
-                    <Typography variant="body1" color="#C5C5C5">
+                    <Typography fontSize={{ md: '1.2rem', xs: '0.8rem' }} color="#C5C5C5">
                         <List>
                             <ListItem>- Desenvolvimento e manutenção de aplicações em ReactJS, Styled Components, Chakra UI.</ListItem>
                             <ListItem>- Desenvolvimento e manutenção de Backend em NestJS.</ListItem>
@@ -53,23 +56,26 @@ export function Experiencias() {
                 <AccordionSummary
                     expandIcon={<KeyboardArrowDownIcon sx={{ color: "#FFF" }} />}
                 >
-                    <Typography variant="h6" display='flex' flexDirection='row' gap={1} alignItems='center'>
-                        <Avatar src="/vortigoLogo.jpeg" sx={{ width: 48, height: 48 }} />
-                        Desenvolvedor Backend -
-                        <Box
+                    <Avatar src="/vortigoLogo.jpeg" sx={{ width: 48, height: 48 }} />
+                    <Box ml={2}>
+                        <Typography fontSize={{ md: '1.2rem', xs: '0.8rem' }} display='flex' flexDirection='row' gap={1} alignItems='center'>
+                            Desenvolvedor Backend
+                        </Typography>
+
+                        <Typography
                             component='span'
+                            fontSize={{ md: '1.2rem', xs: '0.8rem' }}
                             sx={{
                                 background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
                                 backgroundClip: "text",
                                 WebkitBackgroundClip: 'text',
                                 fontWeight: '700',
                                 color: 'transparent',
-                                ml: 1
                             }}
                         >
                             Vortigo Digital
-                        </Box>
-                    </Typography>
+                        </Typography>
+                    </Box>
                 </AccordionSummary>
 
                 <AccordionDetails>
@@ -78,7 +84,9 @@ export function Experiencias() {
                         <Chip label='Novembro 2023' sx={{ bgcolor: '#C5C5C5' }} />
                     </Typography>
 
-                    <Typography variant="body1" color="#C5C5C5">
+
+
+                    <Typography fontSize={{ md: '1.2rem', xs: '0.8rem' }} color="#C5C5C5">
                         <List>
                             <ListItem>- Desenvolvimento de integrações utilizando a plataforma de integrações híbridas (HIP) da Digibee, Power Apps e Mambu para criar APIs.</ListItem>
                             <ListItem>- Projetar e desenvolver soluções baseadas na plataforma Digibee, Power Apps e Mambu.</ListItem>
@@ -94,23 +102,25 @@ export function Experiencias() {
                 <AccordionSummary
                     expandIcon={<KeyboardArrowDownIcon sx={{ color: "#FFF" }} />}
                 >
-                    <Typography variant="h6" display='flex' flexDirection='row' gap={1} alignItems='center'>
-                        <Avatar src="/hashinfoLogo.jpeg" sx={{ width: 48, height: 48 }} />
-                        Estagiário de Desenvolvimento -
-                        <Box
+                    <Avatar src="/hashinfoLogo.jpeg" sx={{ width: 48, height: 48 }} />
+                    <Box ml={2}>
+                        <Typography fontSize={{ md: '1.2rem', xs: '0.8rem' }} display='flex' flexDirection='row' gap={1} alignItems='center'>
+                            Estagiário de Desenvolvimento
+                        </Typography>
+                        <Typography
                             component='span'
+                            fontSize={{ md: '1.2rem', xs: '0.8rem' }}
                             sx={{
                                 background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
                                 backgroundClip: "text",
                                 WebkitBackgroundClip: 'text',
                                 fontWeight: '700',
                                 color: 'transparent',
-                                ml: 1
                             }}
                         >
                             Hashinfo Tecnologia
-                        </Box>
-                    </Typography>
+                        </Typography>
+                    </Box>
                 </AccordionSummary>
 
                 <AccordionDetails>
@@ -119,7 +129,7 @@ export function Experiencias() {
                         <Chip label='Junho 2022' sx={{ bgcolor: '#C5C5C5' }} />
                     </Typography>
 
-                    <Typography variant="body1" color="#C5C5C5">
+                    <Typography fontSize={{ md: '1.2rem', xs: '0.8rem' }} color="#C5C5C5">
                         <List>
                             <ListItem>- Auxiliar no suporte técnico.</ListItem>
                             <ListItem>- Desenvolvimento de API.</ListItem>
@@ -140,23 +150,25 @@ export function Experiencias() {
                 <AccordionSummary
                     expandIcon={<KeyboardArrowDownIcon sx={{ color: "#FFF" }} />}
                 >
-                    <Typography variant="h6" display='flex' flexDirection='row' gap={1} alignItems='center'>
-                        <Avatar src="/winsigaLogo.jpeg" sx={{ width: 48, height: 48 }} />
-                        Estagiário de Desenvolvimento -
-                        <Box
+                    <Avatar src="/winsigaLogo.jpeg" sx={{ width: 48, height: 48 }} />
+                    <Box ml={2}>
+                        <Typography fontSize={{ md: '1.2rem', xs: '0.8rem' }} display='flex' flexDirection='row' gap={1} alignItems='center'>
+                            Estagiário de Desenvolvimento
+                        </Typography>
+                        <Typography
                             component='span'
+                            fontSize={{ md: '1.2rem', xs: '0.8rem' }}
                             sx={{
                                 background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
                                 backgroundClip: "text",
                                 WebkitBackgroundClip: 'text',
                                 fontWeight: '700',
                                 color: 'transparent',
-                                ml: 1
                             }}
                         >
                             Winsiga Sistemas
-                        </Box>
-                    </Typography>
+                        </Typography>
+                    </Box>
                 </AccordionSummary>
 
                 <AccordionDetails>
@@ -165,7 +177,7 @@ export function Experiencias() {
                         <Chip label='Novembro 2021' sx={{ bgcolor: '#C5C5C5' }} />
                     </Typography>
 
-                    <Typography variant="body1" color="#C5C5C5">
+                    <Typography fontSize={{ md: '1.2rem', xs: '0.8rem' }} color="#C5C5C5">
                         <List>
                             <ListItem>- Auxiliar na instalação de programas;</ListItem>
                             <ListItem>- Auxiliar na execução de QUERIES SQL server;</ListItem>

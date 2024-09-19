@@ -52,12 +52,12 @@ export function Sobre() {
                 Sou Paulo Henrique, desenvolvedor com experiência principalmente em React JS, Node JS, NestJS e Typescript. Gosto de dar vida a ideias e ajudar as pessoas a automatizar e impulsionar seus negócios através da tecnologia.
             </Typography>
 
-            <Box display='flex' flexDirection={{ md: 'row', xs: 'column' }} gap={4} textAlign='center'>
+            <Box display='flex' flexDirection={{ md: 'row', xs: 'column' }} gap={{ md: 4, xs: 2 }} textAlign='center'>
                 <Typography
                     fontSize={{ md: "20px", xs: '14px' }}
                     component='a'
                     target="_blank"
-                    href='wa.me/5521992419980'
+                    href='https://api.whatsapp.com/send/?phone=5521992419980'
                     sx={{
                         background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
                         color: '#FFF',
