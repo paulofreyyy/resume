@@ -3,13 +3,13 @@ import { Box, Typography } from "@mui/material";
 export function Sobre() {
     return (
         <Box
+            gap={{ md: 10, xs: 4 }}
             sx={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: 10,
-                mt: 15
+                p: 10,
             }}
         >
             <Box
@@ -25,18 +25,18 @@ export function Sobre() {
 
             <Typography
                 color='white'
-                variant='h2'
+                fontSize={{ md: '56px', xs: '28px' }}
                 fontWeight='bold'
             >
                 Desenvolvedor
                 <Box
                     component='span'
+                    ml={{ md: 3, xs: 2 }}
                     sx={{
                         background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
                         backgroundClip: "text",
                         WebkitBackgroundClip: 'text',
                         color: 'transparent',
-                        ml: 3
                     }}
                 >
                     Fullstack
@@ -44,17 +44,17 @@ export function Sobre() {
             </Typography>
 
             <Typography
-                variant='h5'
+                fontSize={{ md: '28px', xs: '18px' }}
                 color='#C5C5C5'
-                width='50%'
+                width={{ md: '50%', xs: '100%' }}
                 textAlign='center'
             >
                 Sou Paulo Henrique, desenvolvedor com experiência principalmente em React JS, Node JS, NestJS e Typescript. Gosto de dar vida a ideias e ajudar as pessoas a automatizar e impulsionar seus negócios através da tecnologia.
             </Typography>
 
-            <Box display='flex' gap={4}>
+            <Box display='flex' flexDirection={{ md: 'row', xs: 'column' }} gap={4} textAlign='center'>
                 <Typography
-                    variant="h6"
+                    fontSize={{ md: "20px", xs: '14px' }}
                     component='a'
                     target="_blank"
                     href='wa.me/5521992419980'
@@ -70,13 +70,13 @@ export function Sobre() {
                     Fale comigo
                 </Typography>
                 <Typography
-                    variant="h6"
+                    fontSize={{ md: "20px", xs: '14px' }}
                     target="_blank"
                     component='a'
                     href='https://github.com/paulofreyyy'
+                    p='15px 20px'
                     sx={{
                         fontWeight: 'bold',
-                        padding: '15px 25px',
                         borderRadius: 10,
                         border: "2px solid white",
                         color: 'white',
