@@ -5,7 +5,7 @@ export function Certificados() {
         <Box p={15} color='#FFF'>
             <Typography variant='h4' mb={4} textAlign='center'>Certificados</Typography>
 
-            <Stack direction='row' spacing={4} justifyContent='center'>
+            <Stack direction={{ md: 'row', sm: 'column' }} spacing={4} gap={4} justifyContent='center' alignItems={'center'}>
                 <Card sx={{ width: 345, bgcolor: '#0B0414', color: '#C5C5C5' }}>
                     <CardActionArea>
                         <CardMedia
@@ -60,14 +60,16 @@ export function Certificados() {
                     component="a"
                     href='https://www.linkedin.com/in/paulo-pqueiroz/details/certifications/'
                     target="_blank"
+                    fontSize={{ md: 'medium', sm: 'small', xs: 'small' }}
+                    padding='15px 20px'
+                    noWrap
                     sx={{
                         textDecoration: "none",
                         background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
                         color: '#FFF',
                         fontWeight: 'bold',
-                        padding: '15px 20px',
                         borderRadius: 10,
-                        textAlign: 'cebter'
+                        textAlign: 'center',
                     }}
                 >
 

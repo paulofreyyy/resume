@@ -9,7 +9,8 @@ export function Appbar() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                height: '90px'
+                height: '90px',
+
             }}
 
         >
@@ -21,7 +22,7 @@ export function Appbar() {
                     justifyContent: 'center',
                 }}
             >
-                <Toolbar disableGutters>
+                <Toolbar disableGutters sx={{ gap: 10 }}>
                     <Typography
                         variant="h6"
                         noWrap
@@ -30,7 +31,6 @@ export function Appbar() {
                         color="#FFF"
                         sx={{
                             textDecoration: "none",
-                            mr: 10,
                         }}
                     >
                         Início
@@ -43,7 +43,6 @@ export function Appbar() {
                         color="#FFF"
                         sx={{
                             textDecoration: "none",
-                            mr: 10,
                         }}
                     >
                         Projetos
@@ -56,7 +55,6 @@ export function Appbar() {
                         color="#FFF"
                         sx={{
                             textDecoration: "none",
-                            mr: 10,
                         }}
                     >
                         Experiências
@@ -69,7 +67,6 @@ export function Appbar() {
                         color="#FFF"
                         sx={{
                             textDecoration: "none",
-                            mr: 10,
                         }}
                     >
                         Certificados
@@ -82,7 +79,6 @@ export function Appbar() {
                         color="#FFF"
                         sx={{
                             textDecoration: "none",
-                            mr: 10,
                         }}
                     >
                         Contato

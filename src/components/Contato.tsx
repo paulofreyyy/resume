@@ -13,15 +13,16 @@ export function Contato() {
             justifyContent="center"
             alignItems="center"
         >
-            <Box width='50%' p={15}>
+            <Box
+                width={{ xs: '100%', sm: '80%', md: '50%' }}
+                p={10}
+            >
                 <Typography variant='h4' fontWeight={600}>
                     Contato
                 </Typography>
 
                 <Typography variant='body1' color='#C1C1C1' my={4}>
-                    Seasoned Full Stack Software Engineer with over 8 years of hands-on experience in designing
-                    and implementing robust, scalable, and innovative web solutions. Adept at leveraging a
-                    comprehensive skill set encompassing front-end and back-end technologies
+                    Sou Paulo Henrique, desenvolvedor com experiência principalmente em React JS, Node JS, NestJS e Typescript. Gosto de dar vida a ideias e ajudar as pessoas a automatizar e impulsionar seus negócios através da tecnologia.
                 </Typography>
 
                 <Typography
