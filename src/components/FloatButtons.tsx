@@ -1,12 +1,30 @@
 import { Box, Fab } from "@mui/material";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import NavigationIcon from '@mui/icons-material/Navigation';
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export function FloatButtons() {
+    const [showScrollToButton, setShowScrollToButton] = useState(false)
+
     const scrollToTop = useCallback(() => {
         window.scrollTo({ top: 0, behavior: "smooth" })
     }, [])
+
+    const handleScroll = useCallback(() => {
+        if (window.scrollY > 300) {
+            setShowScrollToButton(true)
+        } else {
+            setShowScrollToButton(false)
+        }
+    }, [])
+
+    //Monitora o scroll da página
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll)
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [handleScroll])
     return (
         <Box
             position='fixed'
@@ -16,17 +34,20 @@ export function FloatButtons() {
             flexDirection='column'
             gap={1}
             alignItems='center'
-        >
-            <Fab
-                color='primary'
-                size='small'
-                sx={{
-                    background: 'linear-gradient(90deg, #FF8660, #9A33FF)'
-                }}
-                onClick={scrollToTop}
-            >
-                <NavigationIcon />
-            </Fab>
+        >   
+            {showScrollToButton && (
+
+                <Fab
+                    color='primary'
+                    size='small'
+                    sx={{
+                        background: 'linear-gradient(90deg, #FF8660, #9A33FF)'
+                    }}
+                    onClick={scrollToTop}
+                >
+                    <NavigationIcon />
+                </Fab>
+            )}
             <Fab
                 color='success'
                 LinkComponent={'a'}
