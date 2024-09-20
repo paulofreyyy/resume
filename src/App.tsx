@@ -4,7 +4,7 @@ import { Certificados } from './components/certificados/Certificados'
 import { Contato } from './components/contato/Contato'
 import { Experiencias } from './components/experiencias/Experiencias'
 import { FloatButtons } from './components/FloatButtons'
-import { Sobre } from './components/Sobre'
+import { Sobre } from './components/sobre/Sobre'
 
 function App() {
 
