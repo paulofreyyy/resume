@@ -1,9 +1,9 @@
 import { useTheme, AppBar, Container, IconButton, Toolbar, useMediaQuery, Menu, Box, } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useCallback, useState } from "react";
-import { MenuItemLink } from "./menu/MenuItemLink";
-import { UserProfile } from "./menu/UserProfile";
-import { DesktopMenu } from "./menu/DesktopMenu";
+import { MenuItemLink } from "./MenuItemLink";
+import { UserProfile } from "./UserProfile";
+import { DesktopMenu } from "./DesktopMenu";
 
 export function Appbar() {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -67,7 +67,7 @@ export function Appbar() {
                             </Menu>
                         </>
                     ) : (
-                            <DesktopMenu scrollSmooth={scrollSmooth} handleMenuClose={handleMenuClose} />
+                        <DesktopMenu scrollSmooth={scrollSmooth} handleMenuClose={handleMenuClose} />
                     )}
 
                 </Toolbar>

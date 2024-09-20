@@ -1,7 +1,7 @@
 import './App.css'
-import { Appbar } from "./components/Appbar"
+import { Appbar } from "./components/menu/Appbar"
 import { Certificados } from './components/certificados/Certificados'
-import { Contato } from './components/Contato'
+import { Contato } from './components/contato/Contato'
 import { Experiencias } from './components/Experiencias'
 import { FloatButtons } from './components/FloatButtons'
 import { Sobre } from './components/Sobre'
