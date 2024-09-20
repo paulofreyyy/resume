@@ -25,6 +25,7 @@ export function FloatButtons() {
             window.removeEventListener("scroll", handleScroll)
         }
     }, [handleScroll])
+
     return (
         <Box
             position='fixed'
