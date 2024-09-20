@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# Paulo Frey - Professional Resume 🌟
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[<img src="https://github.com/user-attachments/assets/81ed6a41-5615-4f0f-b9e7-9185b4aab4ef" />](https://paulo-frey-resume.netlify.app/)
 
-Currently, two official plugins are available:
+Bem-vindo ao repositório do meu **resumo profissional**! Este projeto foi criado para apresentar minha trajetória, habilidades e experiências de forma interativa e acessível. Você pode conferir a versão completa e navegável [aqui](https://paulo-frey-resume.netlify.app/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
+- **React** com **TypeScript**
+- **Vite** para build otimizada
+- **ESLint** para qualidade de código
 
-## Expanding the ESLint configuration
+## 📄 O Que Você Vai Encontrar
+- Minhas experiências de trabalho
+- Habilidades técnicas e competências
+- Contato e links para redes sociais
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🎯 Objetivo
+Este projeto visa ser uma forma visual e prática de mostrar meu perfil profissional.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🔗 Acesse o Resume
+- [Paulo Frey Resume](https://paulo-frey-resume.netlify.app/)
