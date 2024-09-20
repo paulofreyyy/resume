@@ -48,9 +48,31 @@ export function Appbar() {
                             <Box display='flex' alignItems='center' justifyContent='space-between' width='100%' >
                                 <Box display='flex' alignItems='center' gap={2}>
                                     <Avatar src="/pauloPhoto.jpg" />
-                                    <Typography textAlign='center' variant="body2">
-                                        Paulo Henrique Pereira
-                                    </Typography>
+                                    <Box
+                                        display='flex'
+                                        flexDirection='column'
+                                        alignItems='start'
+                                    >
+                                        <Typography
+                                            textAlign='center'
+                                            variant="body2"
+                                        >
+                                            Paulo Henrique Pereira
+                                        </Typography>
+                                        <Typography
+                                            textAlign='center'
+                                            variant="body2"
+                                            sx={{
+                                                background: 'linear-gradient(90deg, #FF8660, #9A33FF)',
+                                                backgroundClip: "text",
+                                                WebkitBackgroundClip: 'text',
+                                                color: 'transparent',
+                                                fontWeight: "600",
+                                            }}
+                                        >
+                                            Desenvolvedor Fullstack
+                                        </Typography>
+                                    </Box>
                                 </Box>
                                 <IconButton
                                     size="large"
@@ -68,7 +90,7 @@ export function Appbar() {
                                 onClose={handleMenuClose}
                                 MenuListProps={{
                                     sx: {
-                                        bgcolor: '#0B0414',
+                                        bgcolor: '#191123',
                                     }
                                 }}
                                 sx={{
