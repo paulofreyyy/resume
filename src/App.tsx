@@ -8,7 +8,7 @@ import { Sobre } from './components/Sobre'
 function App() {
     return (
         <>
-            <Appbar />
+            {/* <Appbar /> */}
             <Sobre />
             <Experiencias />
             <Certificados />
