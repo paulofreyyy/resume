@@ -79,19 +79,6 @@ export function Appbar() {
                                     <Typography
                                         textAlign='center'
                                         component='a'
-                                        href='#'
-                                        sx={{
-                                            textDecoration: "none",
-                                            color: "#FFF",
-                                        }}
-                                    >
-                                        Início
-                                    </Typography>
-                                </MenuItem>
-                                <MenuItem onClick={handleMenuClose}>
-                                    <Typography
-                                        textAlign='center'
-                                        component='a'
                                         href='https://github.com/paulofreyyy'
                                         target="_blank"
                                         sx={{
@@ -139,18 +126,6 @@ export function Appbar() {
                         </>
                     ) : (
                         <>
-                                <Typography
-                                    variant="h6"
-                                    noWrap
-                                    component='a'
-                                    href="#"
-                                    color="#FFF"
-                                    sx={{
-                                        textDecoration: "none",
-                                    }}
-                                >
-                                    Início
-                                </Typography>
                                 <Typography
                                     variant="h6"
                                     noWrap
