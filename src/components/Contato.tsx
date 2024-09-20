@@ -12,10 +12,10 @@ export function Contato() {
             display='flex'
             justifyContent="center"
             alignItems="center"
+            p={10}
         >
             <Box
                 width={{ xs: '100%', sm: '80%', md: '50%' }}
-                p={10}
             >
                 <Typography fontSize='2rem' fontWeight='bold'>
                     Contato
