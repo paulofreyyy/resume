@@ -1,6 +1,6 @@
 import { useTheme, AppBar, Container, IconButton, Toolbar, Typography, useMediaQuery, Menu, MenuItem, Box, Avatar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 export function Appbar() {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -14,6 +14,13 @@ export function Appbar() {
     const handleMenuClose = () => {
         setAnchorEl(null);
     }
+
+    const scrollSmooth = useCallback((id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [])
 
     return (
         <AppBar
@@ -95,11 +102,9 @@ export function Appbar() {
                                         Projetos
                                     </Typography>
                                 </MenuItem>
-                                <MenuItem onClick={handleMenuClose}>
+                                <MenuItem onClick={() => { handleMenuClose(); scrollSmooth('experiencias') }}>
                                     <Typography
                                         textAlign='center'
-                                        component='a'
-                                        href='#experiencias'
                                         sx={{
                                             textDecoration: "none",
                                             color: "#FFF",
@@ -108,11 +113,9 @@ export function Appbar() {
                                         Experiências
                                     </Typography>
                                 </MenuItem>
-                                <MenuItem onClick={handleMenuClose}>
+                                <MenuItem onClick={() => { handleMenuClose(); scrollSmooth('certificados') }}>
                                     <Typography
                                         textAlign='center'
-                                        component='a'
-                                        href='#certificados'
                                         sx={{
                                             textDecoration: "none",
                                             color: "#FFF",
@@ -121,11 +124,9 @@ export function Appbar() {
                                         Certificados
                                     </Typography>
                                 </MenuItem>
-                                <MenuItem onClick={handleMenuClose}>
+                                <MenuItem onClick={() => { handleMenuClose(); scrollSmooth('contato') }}>
                                     <Typography
                                         textAlign='center'
-                                        component='a'
-                                        href='#contato'
                                         sx={{
                                             textDecoration: "none",
                                             color: "#FFF",
@@ -166,36 +167,36 @@ export function Appbar() {
                                 <Typography
                                     variant="h6"
                                     noWrap
-                                    component='a'
-                                    href="#experiencias"
                                     color="#FFF"
                                     sx={{
                                         textDecoration: "none",
+                                        cursor: "pointer",
                                     }}
+                                    onClick={() => { scrollSmooth('experiencias') }}
                                 >
                                     Experiências
                                 </Typography>
                                 <Typography
                                     variant="h6"
                                     noWrap
-                                    component='a'
-                                    href="#certificados"
                                     color="#FFF"
                                     sx={{
                                         textDecoration: "none",
+                                        cursor: "pointer",
                                     }}
+                                    onClick={() => { scrollSmooth('certificados') }}
                                 >
                                     Certificados
                                 </Typography>
                                 <Typography
                                     variant="h6"
                                     noWrap
-                                    component='a'
-                                    href="#contato"
                                     color="#FFF"
                                     sx={{
                                         textDecoration: "none",
+                                        cursor: "pointer",
                                     }}
+                                    onClick={() => { scrollSmooth('contato') }}
                                 >
                                     Contato
                                 </Typography>
