@@ -1,6 +1,6 @@
 import './App.css'
 import { Appbar } from "./components/Appbar"
-import { Certificados } from './components/Certificados'
+import { Certificados } from './components/certificados/Certificados'
 import { Contato } from './components/Contato'
 import { Experiencias } from './components/Experiencias'
 import { FloatButtons } from './components/FloatButtons'
