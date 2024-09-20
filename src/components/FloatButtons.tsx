@@ -27,7 +27,12 @@ export function FloatButtons() {
             >
                 <NavigationIcon />
             </Fab>
-            <Fab color='success'>
+            <Fab
+                color='success'
+                LinkComponent={'a'}
+                href='https://api.whatsapp.com/send/?phone=5521992419980'
+                target="_blank"
+            >
                 <WhatsAppIcon />
             </Fab>
         </Box>
