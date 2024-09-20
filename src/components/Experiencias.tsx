@@ -3,7 +3,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export function Experiencias() {
     return (
-        <Box bgcolor='#0B0414' p={{ md: 15, xs: 3 }} py={10} color='#FFF' >
+        <Box bgcolor='#0B0414' p={{ md: 15, xs: 3 }} py={10} color='#FFF' id='experiencias'>
             <Typography fontSize='2rem' mb={4} fontWeight='bold' align="center">Experiências</Typography>
 
             <Accordion defaultExpanded sx={{ bgcolor: 'transparent', color: '#FFF' }}>

@@ -2,7 +2,7 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Stack, Typography } 
 
 export function Certificados() {
     return (
-        <Box p={15} color='#FFF'>
+        <Box p={15} color='#FFF' id='certificados'>
             <Typography variant='h4' mb={4} textAlign='center' fontWeight='bold'>Certificados</Typography>
 
             <Stack direction={{ md: 'row', sm: 'column' }} spacing={4} gap={4} justifyContent='center' alignItems={'center'}>

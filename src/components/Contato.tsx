@@ -12,6 +12,7 @@ export function Contato() {
             display='flex'
             justifyContent="center"
             alignItems="center"
+            id='contato'
             p={10}
         >
             <Box

@@ -85,7 +85,8 @@ export function Appbar() {
                                     <Typography
                                         textAlign='center'
                                         component='a'
-                                        href='#'
+                                        href='https://github.com/paulofreyyy'
+                                        target="_blank"
                                         sx={{
                                             textDecoration: "none",
                                             color: "#FFF",
@@ -98,7 +99,7 @@ export function Appbar() {
                                     <Typography
                                         textAlign='center'
                                         component='a'
-                                        href='#'
+                                        href='#experiencias'
                                         sx={{
                                             textDecoration: "none",
                                             color: "#FFF",
@@ -111,7 +112,7 @@ export function Appbar() {
                                     <Typography
                                         textAlign='center'
                                         component='a'
-                                        href='#'
+                                        href='#certificados'
                                         sx={{
                                             textDecoration: "none",
                                             color: "#FFF",
@@ -124,7 +125,7 @@ export function Appbar() {
                                     <Typography
                                         textAlign='center'
                                         component='a'
-                                        href='#'
+                                        href='#contato'
                                         sx={{
                                             textDecoration: "none",
                                             color: "#FFF",
@@ -153,7 +154,8 @@ export function Appbar() {
                                     variant="h6"
                                     noWrap
                                     component='a'
-                                    href="#"
+                                    href="https://github.com/paulofreyyy"
+                                    target="_blank"
                                     color="#FFF"
                                     sx={{
                                         textDecoration: "none",
@@ -165,7 +167,7 @@ export function Appbar() {
                                     variant="h6"
                                     noWrap
                                     component='a'
-                                    href="#"
+                                    href="#experiencias"
                                     color="#FFF"
                                     sx={{
                                         textDecoration: "none",
@@ -177,7 +179,7 @@ export function Appbar() {
                                     variant="h6"
                                     noWrap
                                     component='a'
-                                    href="#"
+                                    href="#certificados"
                                     color="#FFF"
                                     sx={{
                                         textDecoration: "none",
@@ -189,7 +191,7 @@ export function Appbar() {
                                     variant="h6"
                                     noWrap
                                     component='a'
-                                    href="#"
+                                    href="#contato"
                                     color="#FFF"
                                     sx={{
                                         textDecoration: "none",
