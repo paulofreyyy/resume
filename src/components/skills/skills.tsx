@@ -1,6 +1,7 @@
 import { Box, Card, CardContent, SvgIcon, Tab, Tabs, Typography } from "@mui/material"
 import { useState } from "react";
 import { TabPanel } from "./TabPanel";
+import { SkillCard } from "./SkillCard";
 
 export const Skills = () => {
     const [value, setValue] = useState(1);
@@ -45,21 +46,7 @@ export const Skills = () => {
 
                 <TabPanel value={value} index={1}>
                     <Box color="#FFF" display='flex' justifyContent='space-around' alignItems='center'>
-                        <Card
-                            sx={{
-                                display: 'flex',
-                                padding: 2,
-                                bgcolor: 'transparent',
-                                color: '#FFF',
-                                border: '1px solid red'
-                            }}
-                            elevation={0}
-                        >
-                            {/* <SvgIcon component={nodeIcon} /> */}
-                            <CardContent>
-                                <Typography variant="body2">Node.js</Typography>
-                            </CardContent>
-                        </Card>
+                        <SkillCard icon="node" name="Node.js" />
                     </Box>
                 </TabPanel>
             </Box>
