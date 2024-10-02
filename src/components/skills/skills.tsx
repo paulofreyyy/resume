@@ -32,6 +32,7 @@ export const Skills = () => {
                                 <FaNodeJs size='40px' />
                             }
                             name="Node.js"
+                            main={true}
                         />
                         <SkillCard
                             icon={
