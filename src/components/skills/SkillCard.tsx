@@ -10,9 +10,12 @@ export const SkillCard: React.FC<Props> = ({ icon, name }) => {
         <Card
             sx={{
                 display: 'flex',
+                alignItems: "center",
+                justifyContent: "center",
                 bgcolor: 'transparent',
                 color: '#FFF',
-                border: '1px solid red'
+                // border: '1px solid #FFF',
+                width: "15%",
             }}
             elevation={0}
         >
