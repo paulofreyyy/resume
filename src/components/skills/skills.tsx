@@ -1,7 +1,12 @@
-import { Box, Card, CardContent, SvgIcon, Tab, Tabs, Typography } from "@mui/material"
-import { useState } from "react";
-import { TabPanel } from "./TabPanel";
+import { Box, Typography } from "@mui/material"
 import { SkillCard } from "./SkillCard";
+import { FaAws, FaCss3Alt, FaDocker, FaFigma, FaGitAlt, FaHtml5, FaNodeJs } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { RiJavascriptFill, RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import { SiChakraui, SiJira, SiMui, SiMysql, SiNestjs } from "react-icons/si";
+import { AiOutlineDotNet } from "react-icons/ai";
+import { PiFileCSharp, PiFileSql } from "react-icons/pi";
 
 export const Skills = () => {
     return (
@@ -14,30 +19,158 @@ export const Skills = () => {
                     align="center"
                     color="#FFF"
                 >
-                    Skills
+                    Minhas Skills
                 </Typography>
             </Box>
 
             <Box>
-                <Box>
-                    <Typography variant="h6" color="#FFF">Principais tecnologias</Typography>
+                <Box mb={5}>
+                    <Typography variant="h6" color="#FFF" mb={2}>Principais tecnologias</Typography>
                     <Box color="#FFF" display='flex' justifyContent='space-around' alignItems='center' flexWrap='wrap' gap={5}>
-                        <SkillCard icon="node" name="Node.js" />
-                        <SkillCard icon="react" name="React.js" />
-                        <SkillCard icon="html" name="HTML" />
-                        <SkillCard icon="css" name="CSS" />
-                        <SkillCard icon="javascript" name="Javascript" />
+                        <SkillCard
+                            icon={
+                                <FaNodeJs size='40px' />
+                            }
+                            name="Node.js"
+                        />
+                        <SkillCard
+                            icon={
+                                <FaReact size='40px' />
+                            }
+                            name="React.js"
+                        />
+                        <SkillCard
+                            icon={
+                                <FaHtml5 size='40px' />
+                            }
+                            name="HTML"
+                        />
+                        <SkillCard
+                            icon={
+                                <FaCss3Alt size='40px' />
+                            }
+                            name="CSS"
+                        />
+                        <SkillCard
+                            icon={
+                                <RiJavascriptFill size='40px' />
+                            }
+                            name="Javascript"
+                        />
                     </Box>
                 </Box>
 
                 <Box>
-                    <Typography variant="h6" color="#FFF">Outras tecnologias</Typography>
+                    <Typography variant="h6" color="#FFF" mb={2}>Outras tecnologias</Typography>
                     <Box color="#FFF" display='flex' justifyContent='space-around' alignItems='center' flexWrap='wrap' gap={5}>
-                        <SkillCard icon="node" name="Typescript.js" />
-                        <SkillCard icon="react" name="Nest.js" />
-                        <SkillCard icon="html" name="Express" />
-                        <SkillCard icon="css" name="C#" />
-                        <SkillCard icon="javascript" name="Asp.NET Core" />
+                        <SkillCard
+                            icon={
+                                <BiLogoTypescript size='40px' />
+                            }
+                            name="Typescript"
+                        />
+                        <SkillCard
+                            icon={
+                                <SiNestjs size='40px' />
+                            }
+                            name="NestJS"
+                        />
+                        <SkillCard
+                            icon={
+                                <RiJavascriptFill size='40px' />
+                            }
+                            name="ExpressJS"
+                        />
+                        <SkillCard
+                            icon={
+                                <RiNextjsLine size='40px' />
+                            }
+                            name="NextJS"
+                        />
+                        <SkillCard
+                            icon={
+                                <RiNextjsLine size='40px' />
+                            }
+                            name="NextJS"
+                        />
+                        <SkillCard
+                            icon={
+                                <RiTailwindCssFill size='40px' />
+                            }
+                            name="Tailwind CSS"
+                        />
+                        <SkillCard
+                            icon={
+                                <SiMui size='40px' />
+                            }
+                            name="Material UI"
+                        />
+                        <SkillCard
+                            icon={
+                                <SiChakraui size='40px' />
+                            }
+                            name="Chakra UI"
+                        />
+                        <SkillCard
+                            icon={
+                                <AiOutlineDotNet size='40px' />
+                            }
+                            name=".NET"
+                        />
+                        <SkillCard
+                            icon={
+                                <PiFileCSharp size='40px' />
+                            }
+                            name="C#"
+                        />
+                        <SkillCard
+                            icon={
+                                <BiLogoPostgresql size='40px' />
+                            }
+                            name="PostgreSQL"
+                        />
+                        <SkillCard
+                            icon={
+                                <SiMysql size='40px' />
+                            }
+                            name="MySQL"
+                        />
+                        <SkillCard
+                            icon={
+                                <PiFileSql size='40px' />
+                            }
+                            name="SQL Server"
+                        />
+                        <SkillCard
+                            icon={
+                                <FaGitAlt size='40px' />
+                            }
+                            name="Git"
+                        />
+                        <SkillCard
+                            icon={
+                                <FaDocker size='40px' />
+                            }
+                            name="Docer"
+                        />
+                        <SkillCard
+                            icon={
+                                <FaAws size='40px' />
+                            }
+                            name="AWS"
+                        />
+                        <SkillCard
+                            icon={
+                                <FaFigma size='40px' />
+                            }
+                            name="Figma"
+                        />
+                        <SkillCard
+                            icon={
+                                <SiJira size='40px' />
+                            }
+                            name="Jira"
+                        />
                     </Box>
                 </Box>
             </Box>
