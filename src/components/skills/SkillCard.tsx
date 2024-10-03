@@ -14,8 +14,9 @@ export const SkillCard: React.FC<Props> = ({ icon, name, main }) => {
                 alignItems: "center",
                 justifyContent: "center",
                 bgcolor: 'transparent',
+                borderRadius: "15px",
                 color: '#FFF',
-                width: "15%",
+                width: { md: '15%', sm: '50%' },
             }}
             elevation={0}
         >
