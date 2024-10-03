@@ -1,9 +1,11 @@
-import { useTheme, AppBar, Container, IconButton, Toolbar, useMediaQuery, Menu, Box, } from "@mui/material";
+import { useTheme, AppBar, Container, IconButton, useMediaQuery, Menu, Box } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useCallback, useState } from "react";
 import { MenuItemLink } from "./MenuItemLink";
 import { UserProfile } from "./UserProfile";
 import { DesktopMenu } from "./DesktopMenu";
+import { ContatoIcon } from "../contato/ContatoIcon";
+import { RiAliensFill } from "react-icons/ri";
 
 export function Appbar() {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -38,7 +40,6 @@ export function Appbar() {
 
         >
             <Container maxWidth="xl" sx={{ display: { md: "flex" }, alignItems: 'center', justifyContent: 'center' }}>
-                <Toolbar disableGutters sx={{ gap: 10 }}>
                     {isMobile ? (
                         <>
                             <Box display='flex' alignItems='center' justifyContent='space-between' width='100%'>
@@ -61,16 +62,37 @@ export function Appbar() {
                                 sx={{ display: { xs: 'block', md: 'none' } }}
                             >
                                 <MenuItemLink label="Projetos" onClick={handleMenuClose} href="https://github.com/paulofreyyy" />
+                            <MenuItemLink label="Skills" onClick={() => { handleMenuClose(); scrollSmooth('skills'); }} href="" />
                                 <MenuItemLink label="Experiências" onClick={() => { handleMenuClose(); scrollSmooth('experiencias'); }} href="" />
                                 <MenuItemLink label="Certificados" onClick={() => { handleMenuClose(); scrollSmooth('certificados'); }} href="" />
                                 <MenuItemLink label="Contato" onClick={() => { handleMenuClose(); scrollSmooth('contato'); }} href="" />
                             </Menu>
                         </>
                     ) : (
-                        <DesktopMenu scrollSmooth={scrollSmooth} handleMenuClose={handleMenuClose} />
+                        <Box display='flex' alignItems='center' justifyContent='space-around' width='100%'>
+                            <IconButton
+                                size="large"
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                                onClick={handleMenuOpen}
+                            >
+                                <RiAliensFill />
+                            </IconButton>
+
+                            {/* Centralize o DesktopMenu */}
+                            <Box display="flex" justifyContent="center">
+                                <DesktopMenu scrollSmooth={scrollSmooth} handleMenuClose={handleMenuClose} />
+                            </Box>
+
+                            {/* Ícones de contato */}
+                            <Box gap={2} display='flex'>
+                                <ContatoIcon type="linkedin" />
+                                <ContatoIcon type="github" />
+                            </Box>
+                        </Box>
                     )}
 
-                </Toolbar>
             </Container>
         </AppBar >
     )
