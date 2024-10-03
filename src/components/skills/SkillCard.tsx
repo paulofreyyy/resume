@@ -16,7 +16,7 @@ export const SkillCard: React.FC<Props> = ({ icon, name, main }) => {
                 bgcolor: 'transparent',
                 borderRadius: "15px",
                 color: '#FFF',
-                width: { md: '15%', sm: '50%' },
+                width: { md: '15%', sm: '50%', xs: '50%' },
             }}
             elevation={0}
         >
