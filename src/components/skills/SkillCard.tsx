@@ -15,7 +15,7 @@ export const SkillCard: React.FC<Props> = ({ icon, name }) => {
                 bgcolor: 'transparent',
                 borderRadius: "15px",
                 color: '#FFF',
-                width: { md: '15%', sm: '50%', xs: '50%' },
+                width: { md: '15%', sm: '50%', xs: '45%' },
             }}
             elevation={0}
         >
@@ -24,7 +24,7 @@ export const SkillCard: React.FC<Props> = ({ icon, name }) => {
                 <Box>
                     {icon}
                 </Box>
-                <Typography variant="body2">{name}</Typography>
+                <Typography variant="body2" noWrap>{name}</Typography>
             </CardContent>
         </Card>
     )

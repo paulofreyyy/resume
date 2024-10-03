@@ -35,7 +35,7 @@ export const Skills = () => {
                         <AccordionSummary expandIcon={<KeyboardArrowDownIcon sx={{ color: "#FFF" }} />}>
                             <Typography variant="h6" color="#FFF" mb={2}>Principais tecnologias</Typography>
                         </AccordionSummary>
-                        <Box color="#FFF" display='flex' justifyContent='space-around' alignItems='center' flexWrap='wrap' gap={5}>
+                        <Box color="#FFF" display='flex' justifyContent='space-around' alignItems='center' flexWrap='wrap' gap={{ md: 5, sm: 2, xs: 1 }}>
                             <SkillCard
                                 icon={
                                     <FaNodeJs size='40px' />
@@ -82,7 +82,7 @@ export const Skills = () => {
                         <AccordionSummary expandIcon={<KeyboardArrowDownIcon sx={{ color: "#FFF" }} />}>
                             <Typography variant="h6" color="#FFF" mb={2}>Outras tecnologias</Typography>
                         </AccordionSummary>
-                        <Box color="#FFF" display='flex' justifyContent='space-around' alignItems='center' flexWrap='wrap' gap={5}>
+                        <Box color="#FFF" display='flex' justifyContent='space-around' alignItems='center' flexWrap='wrap' gap={{ md: 5, sm: 2, xs: 1 }}>
                             <SkillCard
                                 icon={
                                     <BiLogoTypescript size='40px' />
