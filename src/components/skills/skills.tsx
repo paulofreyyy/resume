@@ -1,4 +1,4 @@
-import { Accordion, AccordionSummary, Box, Typography } from "@mui/material"
+import { Accordion, AccordionSummary, Box, Typography, useMediaQuery, useTheme } from "@mui/material"
 import { SkillCard } from "./SkillCard";
 import { FaAws, FaCss3Alt, FaDocker, FaFigma, FaGitAlt, FaHtml5, FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -10,6 +10,10 @@ import { PiFileCSharp, PiFileSql } from "react-icons/pi";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export const Skills = () => {
+    const theme = useTheme();
+    // Verifica se a tela é grande (lg e acima)
+    const isLargeScreen = useMediaQuery(theme.breakpoints.up('lg'));
+
     return (
         <Box p={{ md: 15, xs: 3 }} py={10} id='skills'>
             <Box textAlign='center'>
@@ -25,6 +29,7 @@ export const Skills = () => {
             </Box>
 
             <Box>
+                {/* Principais tecnologias */}
                 <Box mb={5}>
                     <Accordion sx={{ bgcolor: 'transparent', color: '#FFF' }} defaultExpanded={true} elevation={0}>
                         <AccordionSummary expandIcon={<KeyboardArrowDownIcon sx={{ color: "#FFF" }} />}>
@@ -71,8 +76,9 @@ export const Skills = () => {
 
                 </Box>
 
-                <Box>
-                    <Accordion sx={{ bgcolor: 'transparent', color: '#FFF' }} defaultExpanded={true} elevation={0}>
+                {/* Outras tecnologias */}
+                <Box>   
+                    <Accordion sx={{ bgcolor: 'transparent', color: '#FFF' }} defaultExpanded={isLargeScreen} elevation={0}>
                         <AccordionSummary expandIcon={<KeyboardArrowDownIcon sx={{ color: "#FFF" }} />}>
                             <Typography variant="h6" color="#FFF" mb={2}>Outras tecnologias</Typography>
                         </AccordionSummary>
