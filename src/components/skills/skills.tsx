@@ -41,35 +41,35 @@ export const Skills = () => {
                                     <FaNodeJs size='40px' />
                                 }
                                 name="Node.js"
-                                main={true}
+
                             />
                             <SkillCard
                                 icon={
                                     <FaReact size='40px' />
                                 }
                                 name="React.js"
-                                main={true}
+
                             />
                             <SkillCard
                                 icon={
                                     <FaHtml5 size='40px' />
                                 }
                                 name="HTML"
-                                main={true}
+
                             />
                             <SkillCard
                                 icon={
                                     <FaCss3Alt size='40px' />
                                 }
                                 name="CSS"
-                                main={true}
+
                             />
                             <SkillCard
                                 icon={
                                     <RiJavascriptFill size='40px' />
                                 }
                                 name="Javascript"
-                                main={true}
+
                             />
                         </Box>
                     </Accordion>

@@ -3,10 +3,9 @@ import { Box, Card, CardContent, Typography } from "@mui/material"
 interface Props {
     icon: React.ReactNode;
     name: string;
-    main?: boolean;
 }
 
-export const SkillCard: React.FC<Props> = ({ icon, name, main }) => {
+export const SkillCard: React.FC<Props> = ({ icon, name }) => {
     return (
         <Card
             sx={{
