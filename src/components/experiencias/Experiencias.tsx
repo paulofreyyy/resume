@@ -8,6 +8,29 @@ export function Experiencias() {
 
             <ExperienciaItem
                 title="Desenvolvedor Fullstack"
+                company="Workingtech"
+                avatarSrc="/workingtechLogo.png"
+                dates={["Outubro 2024", "Atualmente"]}
+                responsibilities={[
+                    "Na Workintech, atuei como desenvolvedor fullstack, contribuindo para o desenvolvimento e manutenção de aplicações em um ambiente dinâmico e colaborativo. Minhas principais responsabilidades incluíram:",
+                    "- Desenvolver interfaces de usuário interativas e responsivas utilizando frameworks modernos como React.",
+                    "- Criar e manter APIs RESTful e GraphQL com autenticação e autorização utilizando Node.js e NestJS.",
+                    "- Gerenciar a integração entre serviços e bibliotecas de terceiros (APIs externas, pagamento, envio de emails, etc.).",
+                    "- Garantir a entrega contínua de funcionalidades com pipelines de CI/CD e deploys automatizados.",
+                    "- Colaborar com designers e stakeholders na definição de requisitos e experiência do usuário (UX/UI).",
+                    "- Otimizar a performance e escalabilidade de aplicações web, monitorando logs e métricas.",
+                    "- Frontend: React, Next.js, Angular, HTML5, CSS3, JavaScript (ES6+), TypeScript, Material UI, TailwindCSS, Bootstrap.",
+                    "- Backend: Node.js, NestJS, Express, TypeScript",
+                    "- Banco de dados: PostgreSQL, MongoDB, MySQL, Firebase.",
+                    "- Outras ferramentras: Docker, Git, GitHub, CI/CD, Heroku, Jira, Figma, Postman, GraphQL, RESTful APIs.",
+                ]}
+                defaultExpanded
+            />
+
+            <Divider sx={{ bgcolor: '#FFF' }} />
+
+            <ExperienciaItem
+                title="Desenvolvedor Fullstack"
                 company="Conversu"
                 avatarSrc="/conversuLogo.jpeg"
                 dates={["Junho 2024", "Setembro 2024"]}
