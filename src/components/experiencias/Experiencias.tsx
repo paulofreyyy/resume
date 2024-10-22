@@ -42,7 +42,6 @@ export function Experiencias() {
                     "- Integração: Criação de componentes em React com TypeScript, integrando com APIs para melhorar a funcionalidade das aplicações.",
                     "- Arquitetura: Contribuição em decisões arquiteturais e boas práticas de desenvolvimento.",
                 ]}
-                defaultExpanded
             />
 
             <Divider sx={{ bgcolor: '#FFF' }} />
