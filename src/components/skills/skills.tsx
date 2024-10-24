@@ -165,7 +165,7 @@ export const Skills = () => {
                                 icon={
                                     <FaDocker size='40px' />
                                 }
-                                name="Docer"
+                                name="Docker"
                             />
                             <SkillCard
                                 icon={
