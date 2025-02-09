@@ -68,7 +68,6 @@ export function Appbar({ children }: Props) {
                 {/* CONTEÚDO PRINCIPAL */}
                 <Box
                     position='relative'
-                    zIndex={-1000}
                     flex={1}
                 >
                     {children}

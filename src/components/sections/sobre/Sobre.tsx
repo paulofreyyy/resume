@@ -5,7 +5,7 @@ export function Sobre() {
         <Box
             height='100vh'
             sx={{
-                backgroundImage: 'url(/background.png)',
+                backgroundImage: 'url(/background_main.png)',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',

@@ -12,7 +12,8 @@ export const ScrollDown = () => {
                 flexDirection: 'column',
                 alignItems: 'center',
                 gap: 1,
-                color: "#FFF"
+                color: "#FFF",
+                zIndex: 1
             }}
         >
             <Typography>Scroll down</Typography>

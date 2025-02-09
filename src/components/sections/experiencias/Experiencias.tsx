@@ -3,8 +3,31 @@ import { ExperienciaItem } from "./ExperienciaItem";
 
 export function Experiencias() {
     return (
-        <Box bgcolor='#0B0414' p={{ md: 15, xs: 3 }} py={10} color='#FFF' id='experiencias'>
-            <Typography fontSize='2rem' mb={4} fontWeight='bold' align="center">Experiências</Typography>
+        <Box
+            bgcolor='#000'
+            p={{ md: 15, xs: 3 }}
+            py={10}
+            color='#FFF'
+            id='experiencias'
+        // sx={{
+        //     backgroundImage: 'url(/background.png)',
+        //     backgroundRepeat: 'no-repeat',
+        //     backgroundPosition: 'center',
+        //     backgroundSize: 'cover',
+        // }}
+        >
+            <Typography fontSize='2rem' mb={4} fontWeight='bold' align="center">Minha Carreira</Typography>
+
+            <ExperienciaItem
+                title="Analista de Implantação / QA"
+                company="Conversu"
+                avatarSrc="/conversuLogo.jpeg"
+                dates={["Outubro 2024", "Atualmente"]}
+                responsibilities={[]}
+                defaultExpanded
+            />
+
+            <Divider sx={{ bgcolor: '#FFF' }} />
 
             <ExperienciaItem
                 title="Desenvolvedor Fullstack"

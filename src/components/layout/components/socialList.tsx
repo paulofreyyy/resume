@@ -6,6 +6,7 @@ export const SocialList = () => {
         <Box
             sx={{
                 position: 'fixed',
+                zIndex: 1,
                 left: 20,
                 top: '50%',
                 transform: 'translateY(-50%)',
