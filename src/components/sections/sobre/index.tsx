@@ -11,6 +11,7 @@ export const SobreMim = () => {
             display='flex'
             justifyContent='space-between'
             alignItems='center'
+            position={'relative'}
         >
             <Box width='60%' height='fit-content'>
                 <Typography variant="h3">DESENVOLVEDOR</Typography>

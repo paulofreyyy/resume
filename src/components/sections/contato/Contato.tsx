@@ -6,6 +6,7 @@ export function Contato() {
         <Box
             bgcolor='#0B0414'
             color='#fff'
+            position='relative'
             display='flex'
             justifyContent="center"
             alignItems="center"

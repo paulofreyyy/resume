@@ -2,7 +2,6 @@ import { AppBar, Container, Box, Typography } from "@mui/material";
 import React from "react";
 import { FaCode } from "react-icons/fa";
 import { SocialList } from "./components/socialList";
-import { SectionIndex } from "./components/sectionIndex";
 import { ScrollDown } from "./components/scrollDown";
 
 interface Props {
@@ -15,7 +14,7 @@ export function Appbar({ children }: Props) {
             sx={{
                 height: '100vh',
                 display: 'flex',
-                flexDirection: 'column'
+                flexDirection: 'column',
             }}
         >
             {/* Menu */}
@@ -53,14 +52,11 @@ export function Appbar({ children }: Props) {
             <Box
                 sx={{
                     flex: 1,
-                    position: 'relative'
+                    position: 'relative',
                 }}
             >
                 {/* Redes sociais */}
                 <SocialList />
-
-                {/* Indicador de seção */}
-                <SectionIndex />
 
                 {/* Scroll Down */}
                 <ScrollDown />
