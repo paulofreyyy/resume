@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { ContatoIcon } from './ContatoIcon';
+import { ContatoIcon } from './components/ContatoIcon';
 
 export function Contato() {
     return (
