@@ -7,12 +7,11 @@ import { Sobre } from './components/sections/sobre/Sobre'
 function App() {
 
     return (
-        <>
-            <Appbar />
+        <Appbar>
             <Sobre />
             <Experiencias />
             <Contato />
-        </>
+        </Appbar>
     )
 }
 
