@@ -1,15 +1,15 @@
 import './App.css'
 import { Appbar } from './components/layout'
 import { Contato } from './components/sections/contato/Contato'
-import { Experiencias } from './components/sections/experiencias/Experiencias'
-import { Sobre } from './components/sections/sobre/Sobre'
+import { Main } from './components/sections/main'
+import { SobreMim } from './components/sections/sobre'
 
 function App() {
 
     return (
         <Appbar>
-            <Sobre />
-            <Experiencias />
+            <Main />
+            <SobreMim />
             <Contato />
         </Appbar>
     )

@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
-export function Sobre() {
+export function Main() {
     return (
         <Box
             height='100vh'
