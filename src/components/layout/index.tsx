@@ -1,6 +1,9 @@
-import { AppBar, Container, Box, Typography, IconButton } from "@mui/material";
+import { AppBar, Container, Box, Typography } from "@mui/material";
 import React from "react";
-import { FaArrowDown, FaCode, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+import { SocialList } from "./components/socialList";
+import { SectionIndex } from "./components/sectionIndex";
+import { ScrollDown } from "./components/scrollDown";
 
 interface Props {
     children: React.ReactNode
@@ -54,52 +57,13 @@ export function Appbar({ children }: Props) {
                 }}
             >
                 {/* Redes sociais */}
-                <Box
-                    sx={{
-                        position: 'fixed',
-                        left: 20,
-                        top: '50%',
-                        transform: 'translateY(-50%)',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: 2,
-                    }}
-                >
-                    <IconButton><FaGithub size={20} color="#FFF" /></IconButton>
-                    <IconButton><FaLinkedin size={20} color="#FFF" /></IconButton>
-                    <IconButton><FaTwitter size={20} color="#FFF" /></IconButton>
-                </Box>
+                <SocialList />
 
                 {/* Indicador de seção */}
-                <Typography
-                    sx={{
-                        position: 'fixed',
-                        color: "#FFF",
-                        bottom: 20,
-                        left: 20,
-                        fontSize: '6rem',
-                        fontWeight: 600,
-                    }}
-                >
-                    01
-                </Typography>
+                <SectionIndex />
 
                 {/* Scroll Down */}
-                <Box
-                    sx={{
-                        position: 'fixed',
-                        bottom: 20,
-                        right: 20,
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        gap: 1,
-                        color: "#FFF"
-                    }}
-                >
-                    <Typography>Scroll down</Typography>
-                    <FaArrowDown size={20} />
-                </Box>
+                <ScrollDown />
 
                 {/* CONTEÚDO PRINCIPAL */}
                 <Box
