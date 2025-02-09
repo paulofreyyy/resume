@@ -1,11 +1,8 @@
 import './App.css'
-import { Appbar } from "./components/menu/Appbar"
-import { Certificados } from './components/certificados/Certificados'
-import { Contato } from './components/contato/Contato'
-import { Experiencias } from './components/experiencias/Experiencias'
-import { FloatButtons } from './components/FloatButtons'
-import { Sobre } from './components/sobre/Sobre'
-import { Skills } from './components/skills/skills'
+import { Appbar } from './components/layout'
+import { Contato } from './components/sections/contato/Contato'
+import { Experiencias } from './components/sections/experiencias/Experiencias'
+import { Sobre } from './components/sections/sobre/Sobre'
 
 function App() {
 
@@ -13,11 +10,8 @@ function App() {
         <>
             <Appbar />
             <Sobre />
-            <Skills />
             <Experiencias />
-            <Certificados />
             <Contato />
-            <FloatButtons />
         </>
     )
 }
