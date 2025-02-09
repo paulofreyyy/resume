@@ -16,8 +16,19 @@ export const SkillBar = ({ title, value }: Props) => {
                     gap: 4
                 }}
             >
-                <Box minWidth={450}>
-                    <LinearProgress variant="determinate" value={value} sx={{ height: 8, borderRadius: 10 }} />
+                <Box minWidth={550}>
+                    <LinearProgress
+                        variant="determinate"
+                        value={value}
+                        sx={{
+                            height: 8,
+                            borderRadius: 10,
+                            bgcolor: '#747474',
+                            '& .MuiLinearProgress-bar': {
+                                backgroundColor: '#FFF',
+                            },
+                        }}
+                    />
                 </Box>
 
                 <Typography>{title}</Typography>
