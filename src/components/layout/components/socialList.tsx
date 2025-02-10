@@ -15,9 +15,17 @@ export const SocialList = () => {
                 gap: 2,
             }}
         >
-            <IconButton><FaGithub size={20} color="#FFF" /></IconButton>
-            <IconButton><FaLinkedin size={20} color="#FFF" /></IconButton>
-            <IconButton><FaInstagram size={20} color="#FFF" /></IconButton>
+            <IconButton>
+                <FaGithub size={20} color="#FFF" />
+            </IconButton>
+
+            <IconButton>
+                <FaLinkedin size={20} color="#FFF" />
+            </IconButton>
+
+            <IconButton>
+                <FaInstagram size={20} color="#FFF" />
+            </IconButton>
         </Box>
     )
 }

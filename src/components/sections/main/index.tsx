@@ -12,6 +12,7 @@ export function Main() {
             }}
             display='flex'
             justifyContent='end'
+
         >
             <Box
                 color='#FFF'
