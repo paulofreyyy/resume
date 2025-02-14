@@ -3,8 +3,8 @@ import Grid from '@mui/material/Grid2'
 import { CustomCard } from "./cards"
 
 const experiences = [
-    { logo: 'conversuLogo.jpeg', title: 'Analista QA', startDate: 'Out 2024', endDate: 'Atualmente' },
-    { logo: 'workingtechLogo.png', title: 'Workingtech', startDate: 'Out 2024', endDate: 'Atualmente' },
+    { logo: 'conversuLogo.jpeg', title: 'Analista QA / Implantação', startDate: 'Out 2024', endDate: 'Atualmente' },
+    { logo: 'workingtechLogo.png', title: 'Desenvolvedor Frontend', startDate: 'Out 2024', endDate: 'Atualmente' },
     { logo: 'conversuLogo.jpeg', title: 'Desenvolvedor Fullstack', startDate: 'Jun 2024', endDate: 'Out 2024' },
     { logo: 'vortigoLogo.jpeg', title: 'Desenvolvedor Backend', startDate: 'Jun 2022', endDate: 'Nov 2023' },
     { logo: 'hashinfoLogo.jpeg', title: 'Estagiário', startDate: 'Dez 2021', endDate: 'Jun 2022' },
@@ -17,7 +17,7 @@ export const Experiencias = () => {
             height='100vh'
             px={20}
             py={10}
-            bgcolor='#)00'
+            bgcolor='#000'
             color='#FFF'
             display='flex'
             flexDirection='column'
