@@ -14,6 +14,7 @@ const experiences = [
 export const Experiencias = () => {
     return (
         <Box
+            id="carreira"
             height='100vh'
             px={20}
             py={10}

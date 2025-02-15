@@ -15,6 +15,7 @@ const projetos = [
 export const Portifolio = () => {
     return (
         <Box
+            id="portifolio"
             height='100vh'
             px={20}
             py={10}

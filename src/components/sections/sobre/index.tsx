@@ -4,6 +4,7 @@ import { SkillBar } from "./components/skillBar"
 export const SobreMim = () => {
     return (
         <Box
+            id="sobre"
             height='100vh'
             color='#FFF'
             bgcolor='#000'

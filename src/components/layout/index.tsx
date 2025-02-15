@@ -40,9 +40,9 @@ export function Appbar({ children }: Props) {
 
                         {/* MenuItens*/}
                         <Box display='flex' alignItems='center' gap={10}>
-                            <Typography fontSize='0.9rem'>SOBRE MIM</Typography>
-                            <Typography fontSize='0.9rem'>PORTIFOLIO</Typography>
-                            <Typography fontSize='0.9rem'>CARREIRA</Typography>
+                            <Typography fontSize='0.9rem' component='a' href="#sobre" sx={{ textDecoration: 'none', color: "#FFF" }}>SOBRE MIM</Typography>
+                            <Typography fontSize='0.9rem' component='a' href="#portifolio" sx={{ textDecoration: 'none', color: "#FFF" }}>PORTIFOLIO</Typography>
+                            <Typography fontSize='0.9rem' component='a' href="#carreira" sx={{ textDecoration: 'none', color: "#FFF" }}>CARREIRA</Typography>
                         </Box>
                     </Box>
                 </Container>
