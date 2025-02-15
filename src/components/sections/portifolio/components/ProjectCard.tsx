@@ -42,13 +42,9 @@ export const ProjectCard = ({ link, image }: Props) => {
             >
                 <Typography
                     className="typography-hover"
-                    component='a'
-                    href="https://github.com/paulofreyyy"
-                    target="_blank"
                     sx={{
                         fontWeight: 600,
                         color: "#FFF",
-                        textDecoration: 'none',
                         width: 150,
                         py: 2,
                         borderRadius: 20,
