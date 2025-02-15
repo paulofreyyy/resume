@@ -3,6 +3,7 @@ import React from "react";
 import { FaCode } from "react-icons/fa";
 import { SocialList } from "./components/socialList";
 import { ScrollDown } from "./components/scrollDown";
+import { MenuItemAnimated } from "../animations/MenuItemAnimated";
 
 interface Props {
     children: React.ReactNode
@@ -40,9 +41,26 @@ export function Appbar({ children }: Props) {
 
                         {/* MenuItens*/}
                         <Box display='flex' alignItems='center' gap={10}>
-                            <Typography fontSize='0.9rem' component='a' href="#sobre" sx={{ textDecoration: 'none', color: "#FFF" }}>SOBRE MIM</Typography>
-                            <Typography fontSize='0.9rem' component='a' href="#portifolio" sx={{ textDecoration: 'none', color: "#FFF" }}>PORTIFOLIO</Typography>
-                            <Typography fontSize='0.9rem' component='a' href="#carreira" sx={{ textDecoration: 'none', color: "#FFF" }}>CARREIRA</Typography>
+                            <MenuItemAnimated
+                                section="#sobre"
+                                delay={0.4}
+                            >
+                                SOBRE MIM
+                            </MenuItemAnimated>
+
+                            <MenuItemAnimated
+                                section="#portifolio"
+                                delay={0.6}
+                            >
+                                PORTIFOLIO
+                            </MenuItemAnimated>
+
+                            <MenuItemAnimated
+                                section="#carreira"
+                                delay={0.8}
+                            >
+                                CARREIRA
+                            </MenuItemAnimated>
                         </Box>
                     </Box>
                 </Container>
