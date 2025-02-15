@@ -4,6 +4,7 @@ import { FaCode } from "react-icons/fa";
 import { SocialList } from "./components/socialList";
 import { ScrollDown } from "./components/scrollDown";
 import { MenuItemAnimated } from "../animations/MenuItemAnimated";
+import { motion } from "framer-motion"
 
 interface Props {
     children: React.ReactNode
@@ -32,7 +33,19 @@ export function Appbar({ children }: Props) {
             >
                 <Container maxWidth="xl" sx={{ display: { md: "flex" }, alignItems: 'center', justifyContent: 'center' }}>
                     <Box display='flex' alignItems='center' justifyContent='space-between' width='100%' px={3}>
-                        <Box display='flex' alignItems='center' gap={2}>
+                        <Box
+                            component={motion.div}
+                            initial={{ x: 50, opacity: 0 }}
+                            whileInView={{
+                                x: 0,
+                                opacity: 1,
+                                transition: { duration: 0.6, ease: "easeOut" }
+                            }}
+                            viewport={{ once: true }}
+                            display='flex'
+                            alignItems='center'
+                            gap={2}
+                        >
                             <FaCode size={30} />
                             <Typography textAlign='center' variant="h6" fontWeight={600}>
                                 PAULO FREY
