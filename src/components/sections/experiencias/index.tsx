@@ -28,7 +28,13 @@ export const Experiencias = () => {
             <Grid container spacing={6}>
                 {experiences.map((item, index) => (
                     <Grid size={4}>
-                        <CustomCard logo={item.logo} title={item.title} startDate={item.startDate} endDate={item.endDate} key={index} />
+                        <CustomCard
+                            logo={item.logo}
+                            title={item.title}
+                            startDate={item.startDate}
+                            endDate={item.endDate}
+                            key={index}
+                        />
                     </Grid>
                 ))}
             </Grid>
